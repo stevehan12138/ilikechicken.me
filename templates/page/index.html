@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block title %}
+    CodingPotato
+{% endblock title %}
+
+{% block content %}
+    <section id="banner">
+        <h2>CodingPotato</h2>
+        <p>Learn coding and do fun projects</p>
+        <div class="d-flex justify-content-around bannerbtn">
+            <div class="p-2">
+                <button onclick="location.href='/about'" type="button" class="learnmore btn-big">Learn More</button>
+            </div>
+            <div class="p-2">
+                <button onclick="location.href='/signup'" type="button" class="signup btn-big">Sign Up</button>
+            </div>
+        </div>
+    </section>
+    <div class="cards text-center">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">For Kids</h5>
+                <div class="placeholder"></div>
+                <p class="card-text">By doing this you can do this and that, then eventually that. Be careful with this because it might hurt those during these pass that</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">For Adults</h5>
+                <div class="placeholder"></div>
+                <p class="card-text">By doing this you can do this and that, then eventually that. Be careful with this because it might hurt those during these pass that</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Do Projects</h5>
+                <div class="placeholder"></div>
+                <p class="card-text">By doing this you can do this and that, then eventually that. Be careful with this because it might hurt those during these pass that</p>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

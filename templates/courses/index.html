@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    CodingPotato - Courses
+{% endblock title %}
+
+{% block content %}
+<div class="cards text-center">
+{% for course in courses %}
+<div class="card lists">
+    <div class="card-body">
+        <h5 class="card-title">{{ course.course_name }}</h5>
+        <div class="placeholder"></div>
+        <p class="card-text">By doing this you can do this and that, then eventually that. Be careful with this because it might hurt those during these pass that</p>
+    </div>
+</div>
+{% endfor %}
+</div>
+
+{% endblock content %}
