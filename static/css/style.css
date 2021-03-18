@@ -1,13 +1,11 @@
 body {
     font-family: Calibri;
-    background-color: #f5f5f5;
 }
 
-
-footer.bottom {
-    position: relative;
-    padding: 5px 0;
-    margin-top: 50px;
+.main-content{
+    background-color: #fff;
+    height:100%;
+    width:100%;
 }
 
 .navbar {
@@ -44,21 +42,17 @@ footer.bottom {
     color: #C4C4C4;
 }
 
-footer{
-    background-color: #747274;
-}
-
 .container.contacts{
     display: flex;
 }
 
 .content {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 7px;
     align-items: center;
     background-color: white;
     padding: 3em;
-    margin: 6em;
-    box-shadow: 0 2px 0 0 #e5e5e5;
+    margin: 3em 6em;
     color: #747274;
 }
 
@@ -129,8 +123,4 @@ footer{
 
 .card.lists{
     margin: 20px 40px;
-}
-
-.main-content{
-    overflow: auto;
 }
