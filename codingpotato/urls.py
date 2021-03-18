@@ -27,4 +27,4 @@ urlpatterns = [
     path('about/', TemplateView.as_view(template_name='page/about.html'), name='about'),
     path('courses/', include('courses.urls'), name='courses'),
     path('martor/', include('martor.urls')),
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+]
