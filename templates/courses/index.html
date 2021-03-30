@@ -6,16 +6,23 @@
 {% endblock title %}
 
 {% block content %}
-<div class="cards text-center">
+<div class="container">
+<div class="row my-5">
 {% for course in courses %}
-<div class="card lists">
-    <div class="card-body">
-        <h5 class="card-title">{{ course.course_name }}</h5>
-        <div class="placeholder"></div>
-        <p class="card-text">By doing this you can do this and that, then eventually that. Be careful with this because it might hurt those during these pass that</p>
+    <div class="col-3">
+    <div class="card h-100">
+        <h5 class="card-header">{{ course.course_name }}</h5>
+        <div class="placeholder w-100 mb-10"></div>
+        <div class="card-body">  
+            <p class="card-text">{{ course.description|slice:'20' }}</p>
+        </div>
+        <div class="card-footer">
+            <a href="{{ course.course_name|urlencode }}" class="btn btn-primary">Learn</a>
+        </div>
     </div>
-</div>
+    </div>
 {% endfor %}
+</div>
 </div>
 
 {% endblock content %}

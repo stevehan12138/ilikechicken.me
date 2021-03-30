@@ -3,7 +3,6 @@ body {
 }
 
 .main-content{
-    background-color: #fff;
     height:100%;
     width:100%;
 }
@@ -102,25 +101,9 @@ body {
     border: .15rem solid white;
 }
 
-.card{
-    text-align: left!important;
-    display: inline-block;
-    width: 18rem;
-    margin: 50px 80px;
-}
-
 .placeholder {
     align-items: center;
     justify-content: center;
     background-color: #7C90A0;
     height: 200px;
-}
-
-.card p{
-    font-size: 18px;
-    margin: 10px auto;
-}
-
-.card.lists{
-    margin: 20px 40px;
 }

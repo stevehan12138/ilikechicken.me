@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    CodingPotato - {{ course.course_name }}
+{% endblock title %}
+
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-2 my-5 w-25">
+            <div class="course-info-box p-3 mb-4 bg-light">
+                <h5>Course Detail</h5>
+                <h6 class="my-2">Estimate Completion Time: </h6>
+                <h6 class="my-2">Difficulty: </h6>
+                <h6 class="my-2">Recommended: yes</h6>
+            </div>
+            <div class="course-info-box p-3 bg-light">
+                <h6>User Reviews</h6>
+                <p>blablabla</p>
+                <p>blablabla</p>
+                <p>blablabla</p>
+                <p>blablabla</p>
+                <p>blablabla</p>
+                <p>blablabla</p>
+                <p>blablabla</p>
+            </div>
+        </div>
+        <div class="col-5 mt-5 bg-light w-50 mx-5">
+            <div class="course-info-box m-4">
+                <h4 class="text-center">{{ course.course_name }}</h5>
+                <div class="placeholder"></div>
+                <ul class="my-3"><h6>{{ course.description }}</h6></ul>
+                <h5>Recommended requirements: </h5>
+                <a href="{{ course.course_name|urlencode }}" class="btn btn-primary">Start Learning</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
