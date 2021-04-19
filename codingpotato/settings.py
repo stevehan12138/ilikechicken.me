@@ -121,3 +121,21 @@ STATICFILES_DIRS = [
 STATIC_URL = "/static/"
 
 STATIC_ROOT = BASE_DIR / "staticroot"
+
+CKEDITOR_CONFIGS = {
+    'default': {
+        'width':'auto',
+        'height':'250px',
+        'tabSpaces': 4,
+        'toolbar': 'Custom',
+        'toolbar_Custom': [
+            ['Smiley', 'CodeSnippet'], 
+            ['Bold', 'Italic', 'Underline', 'RemoveFormat', 'Blockquote'],
+            ['TextColor', 'BGColor'],
+            ['Link', 'Unlink'],
+            ['NumberedList', 'BulletedList'],
+            ['Maximize']
+        ],
+        'extraPlugins': ','.join(['codesnippet']),
+    }
+}
