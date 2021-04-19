@@ -1,5 +1,5 @@
 from django.db import models
-from martor.models import MartorField
+from ckeditor.fields import RichTextField
 
 # Create your models here.
 class Course(models.Model):
@@ -13,5 +13,5 @@ class Course(models.Model):
 class Chapter(models.Model):
     course = models.ForeignKey(Course, on_delete=models.CASCADE)
     chapter_title = models.CharField(max_length=100)
-    body = MartorField()
+    body = RichTextField()
     
