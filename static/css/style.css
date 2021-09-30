@@ -1,5 +1,8 @@
-body {
+html, body {
     font-family: Calibri;
+    margin: 0;
+    height: 100%;
+    background-color: #f5f5f5;
 }
 
 .main-content{
@@ -43,24 +46,6 @@ body {
 
 .container.contacts{
     display: flex;
-}
-
-.content {
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    border-radius: 7px;
-    align-items: center;
-    background-color: white;
-    padding: 3em;
-    margin: 3em 6em;
-    color: #747274;
-}
-
-.content h1{
-    font-size: 28pt;
-}
-
-.content p{
-    font-size: 12pt;
 }
 
 #banner {

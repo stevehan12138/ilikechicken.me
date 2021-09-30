@@ -7,19 +7,20 @@
 
 {% block content %}
 <div class="content">
-    <h3>Who are we?</h3>
-    <p><i>CodingPotato</i> is an initiative to help everyone to have a closer look at programming, lead by a motivated high school team. CodingPotato focuses on providing many projects, tutoriaas, and many other resources and keep everything simple enough to understand. Our tutorial includes Python, HTML, JavaScript, C++, and more.</p>   
+    <h3>About this site</h3>
+    <p><i>CodingPotato</i>is my personal blog website, I will post things that I thought are interesting here, 
+        such as React, Python, CSS, etc. You can contact me with the form below.</p>   
     <hr>
     <h3>Contact Us</h3>
-    <form action="https://formspree.io/f/xdopvqvb" method="POST">
+    <form action="https://formspree.io/f/xayakqww" method="POST">
         <div class="form-group">
             <label for="InputEmail">Email address</label>
-            <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+            <input name="email" type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter email" required>
             <small id="emailHelp" class="form-text text-muted">We need your email to follow up with you.</small>
         </div>
         <div class="form-group">
-            <label for="FormControlTextarea">Question</label>
-            <textarea class="form-control" id="FormControlTextarea" rows="3"></textarea>
+            <label for="FormControlTextarea">Content</label>
+            <textarea name="content" class="form-control" id="FormControlTextarea" rows="17" required></textarea>
         </div>
         <div class="mt-2">
             <button type="submit" class="btn btn-primary">Submit</button>

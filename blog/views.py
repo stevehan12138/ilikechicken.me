@@ -10,7 +10,7 @@ class BlogPostList(generic.ListView):
     def get_queryset(self):
         return BlogPost.objects.all()
 
-class BlogPostView(generic.DetailView):
-    model = BlogPost
-    template_name = 'blog/blog.html'
-    context_object_name = 'blog'
+def blog_post_detail(request, pk):
+    blog = get_object_or_404(BlogPost, pk=pk)
+    recent_blogs = BlogPost.objects.all().order_by('-last_edited')[:3]
+    return render(request, 'blog/blog.html', {'blog': blog, 'recents': recent_blogs})

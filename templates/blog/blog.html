@@ -5,13 +5,32 @@
     CodingPotato - {{ blog.title }}
 {% endblock title %}
 
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/blog/blog.css' %}">
+{% endblock css %}
+
 {% block content %}
-<div class="container content">
+<div class="container-fluid">
     <div class="row">
-        <h1 class="col-12 mb-4">{{ blog.title }}</h1>
-        <div class="col-12 alert alert-success">Last updated: {{ blog.last_edited }}</div>
-        <div class="col-12">
+        <div class="col-xl-10 blog-body">
+            <h2 class="title">{{ blog.title }}</h2>
+            <p>Last updated: {{ blog.last_edited }}</p>
+            <hr />
+            <div>
             <p>{{ blog.body|safe }}</p>
+            </div>
+        </div>
+        <div class="col-xl-2 sidebar">
+            <h3>Recent Posts</h3>
+            {% for recent in recents %}
+            <div class="card recent-post">
+                <div class="card-body">
+                    <h5 class="card-title">{{ recent.title }}</h5>
+                    <div class="card-text">{{ recent.body|safe|slice:'30'}}</div>
+                    <a href="#" class="btn btn-primary">Read</a>
+                </div>
+            </div>
+            {% endfor %}
         </div>
     </div>
 </div>

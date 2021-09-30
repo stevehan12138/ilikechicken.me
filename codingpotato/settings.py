@@ -30,7 +30,6 @@ ALLOWED_HOSTS = constants.ALLOWED_HOSTS
 
 INSTALLED_APPS = [
     'blog',
-    'courses',
     'ckeditor',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -139,3 +138,5 @@ CKEDITOR_CONFIGS = {
         'extraPlugins': ','.join(['codesnippet']),
     }
 }
+
+DEFAULT_AUTO_FIELD='django.db.models.AutoField'
