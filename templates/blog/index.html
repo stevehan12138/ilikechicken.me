@@ -5,24 +5,36 @@
     CodingPotato - Courses
 {% endblock title %}
 
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/blog/blog.css' %}">
+{% endblock css %}
+
 {% block content %}
 <div class="container">
 <div class="row my-5">
+<div class="col-xl-10">
 {% for blog in blogs %}
-    <div class="col-3">
-    <div class="card h-100">
-        <h5 class="card-header">{{ blog.title }}</h5>
-        <div class="placeholder w-100 mb-10"></div>
-        <div class="card-body">  
+    <div class="card w-100 blog-post">
+        <div class="card-body">
+            <h5 class="card-title">{{ blog.title }}</h5>
+            <p><small>Last Updated: {{ blog.last_edited }}</small></p>
             <p class="card-text">{{ blog.body|safe|slice:'50' }}...</p>
+            <a href="{{ blog.id }}" class="btn btn-primary">Read</a>
         </div>
-        <div class="card-footer">
-            <a href="{{ blog.id }}" class="btn btn-primary">Learn</a>
-        </div>
-    </div>
     </div>
 {% endfor %}
 </div>
+<div class="col-xl-2">
+    <form action="/blog/" method="get">
+        <div class="input-group rounded">
+            <input type="search" name='q' class="form-control rounded" placeholder="Search">
+            <span class="input-group-text border-0" id="search-addon">
+                <i class="fas fa-search"></i>
+            </span>
+        </div>
+    </form>
 </div>
+</div></div>
+
 
 {% endblock content %}

@@ -3,12 +3,14 @@ from django.views import generic
 from .models import *
 
 # Create your views here.
-class BlogPostList(generic.ListView):
-    template_name = 'blog/index.html'
-    context_object_name = 'blogs'
 
-    def get_queryset(self):
-        return BlogPost.objects.all()
+def blog_post_list(request):
+    blogs = BlogPost.objects.all()
+    search = request.GET.get('q')
+    if search:
+        blogs = blogs.filter(title__icontains=search)
+        return render(request, 'blog/index.html', {'blogs': blogs})
+    return render(request, 'blog/index.html', {'blogs': blogs})
 
 def blog_post_detail(request, pk):
     blog = get_object_or_404(BlogPost, pk=pk)
