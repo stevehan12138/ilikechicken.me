@@ -5,8 +5,8 @@ from .models import *
 # Create your views here.
 
 def blog_post_list(request):
-    blogs = BlogPost.objects.all()
-    search = request.GET.get('q').order_by('-last_edited')
+    blogs = BlogPost.objects.all().order_by('-last_edited')
+    search = request.GET.get('q')
     if search:
         blogs = blogs.filter(title__icontains=search)
     return render(request, 'blog/index.html', {'blogs': blogs})
