@@ -6,10 +6,9 @@ from .models import *
 
 def blog_post_list(request):
     blogs = BlogPost.objects.all()
-    search = request.GET.get('q')
+    search = request.GET.get('q').order_by('-last_edited')
     if search:
         blogs = blogs.filter(title__icontains=search)
-        return render(request, 'blog/index.html', {'blogs': blogs})
     return render(request, 'blog/index.html', {'blogs': blogs})
 
 def blog_post_detail(request, pk):
