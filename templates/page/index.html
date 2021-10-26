@@ -1,23 +1,41 @@
 {% extends "base.html" %}
 
 {% block title %}
-    CodingPotato
+    ilikchicken.me
 {% endblock title %}
 
 {% block content %}
     <section id="banner">
-        <h2>CodingPotato</h2>
-        <p>Place where I post my thoughts</p>
+        <h2>Steve Han</h2>
+        <p>My personal site to put my thoughts</p>
         <div class="d-flex justify-content-center">
             <div class="p-2">
-                <button onclick="location.href='/about'" type="button" class="learnmore btn-big">Learn More</button>
+                <button onclick="location.href='/contact'" type="button" class="learnmore btn-big">Contact Me</button>
             </div>
             <div class="p-2">
                 <button onclick="location.href='/blog'" type="button" class="signup btn-big">Blog</button>
             </div>
         </div>
     </section>
-    <div class="container">
-        
+    <div class="about-me">
+        <h1 id="about-me">About me</h1>
+        <p>I&#39;m a high schooler living in Toronto who is highly interested in CS. I liked to tinker with computers when I was really young and kept the interest until now. I&#39;m looking for any CS-related volunteer or intern opportunities, as well as learning more about the field and the future of technology. If you have any questions or want to get in touch, please feel free to contact me.</p>
+        <h2 id="experiences">Experiences</h2>
+        <p>I have worked on several real-life projects using many frameworks and languages. For example, this website is coded with python using Django and Bootstrap.</p>
+        <p>Here is a list of my works:</p>
+        <ul>
+        <li><a href="https://github.com/stevehan12138/ilikechicken.me">This website</a> (Django, Mysql, Bootstrap)</li>
+        <li><a href="https://uconnectco.app">UConnect</a> (WordPress, PHP)</li>
+        <li>Sickkids - IMHP (ReactJS, TypeScript, Mysql, RESTful API &amp; frontend development)</li>
+        </ul>
+        <h2 id="skills">Skills</h2>
+        <p>My skills include:</p>
+        <ul>
+        <li>Some understanding in data structure and computer algorithm</li>
+        <li>Python, JS, TS, Java, etc.</li>
+        <li>Many web development frameworks such as Django, WordPress, React, GraphQL, etc.</li>
+        </ul>
+        <p>Besides coding, I also play piano at an advanced level, intermediate level of badminton, and some guitar.</p>
+        <p>Feel free to get in touch with me through the social media links in the footer or go to be contact page.</p>
     </div>
 {% endblock content %}

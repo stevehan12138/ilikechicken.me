@@ -31,11 +31,6 @@ html, body {
     padding: .3rem .75em;
 }
 
-.btn.signup{
-    background-color: #7C90A0;
-    color: white;
-}
-
 .btn.login{
     background-color: #657183;
     color: white;
@@ -92,4 +87,16 @@ html, body {
     justify-content: center;
     background-color: #7C90A0;
     height: 200px;
+}
+
+.contact {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.about-me {
+    width: 75%;
+    margin: 0 auto;
+    padding: 20px 0;
 }
