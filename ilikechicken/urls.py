@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from django.urls.conf import include
 from django.views.generic.base import TemplateView
+from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -24,5 +25,6 @@ urlpatterns = [
     path('privacy/', TemplateView.as_view(template_name='page/privacy.html'), name='privacy'),
     path('contact/', TemplateView.as_view(template_name='page/contact.html'), name='contact'),
     path('about/', TemplateView.as_view(template_name='page/about.html'), name='about'),
-    path('blog/', include('blog.urls'), name='blog')
+    path('blog/', include('blog.urls'), name='blog'),
+    path('postreceive/', views.postreceive, name='postreceive'),
 ]
