@@ -5,5 +5,4 @@ cd ~/ilikechicken
 git pull
 python manage.py migrate
 python manage.py collectstatic --noinput
-touch /var/www/www_ilikechicken_me_wsgi.py
 echo done
