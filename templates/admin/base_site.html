@@ -1,0 +1,18 @@
+{% extends "admin/base.html" %}
+
+{% block title %}Admin Panel | Ilikechicken{% endblock %}
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">Ilikechicken</a></h1>
+{% endblock %}
+
+{% block extrastyle %}
+<style>
+    body {
+        font-family: 'Sora', sans-serif !important;
+    }
+</style>
+<link rel="shortcut icon" type="image/png" href="/static/image/logo.png"/>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
