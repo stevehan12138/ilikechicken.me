@@ -1,6 +1,5 @@
 from django.shortcuts import render, get_object_or_404
 from .models import *
-from django.utils.html import strip_tags
 
 # Create your views here.
 
@@ -13,6 +12,5 @@ def blog_post_list(request):
 
 def blog_post_detail(request, pk):
     blog = get_object_or_404(BlogPost, pk=pk)
-    stripped_content = strip_tags(blog.body)
     recent_blogs = BlogPost.objects.all().order_by('-last_edited')[:3]
-    return render(request, 'blog/blog.html', {'blog': blog, 'recents': recent_blogs, 'stripped_content': stripped_content})
+    return render(request, 'blog/blog.html', {'blog': blog, 'recents': recent_blogs})
