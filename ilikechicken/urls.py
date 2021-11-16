@@ -28,3 +28,5 @@ urlpatterns = [
     path('blog/', include('blog.urls'), name='blog'),
     path('postreceive/', views.postreceive, name='postreceive'),
 ]
+
+handler404 = 'ilikechicken.views.handler404'

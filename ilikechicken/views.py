@@ -7,6 +7,7 @@ from django.http import HttpResponse
 from ilikechicken import constants
 from django.views.decorators.csrf import csrf_exempt
 from django.utils.encoding import force_bytes
+from django.shortcuts import render, get_object_or_404
 
 @csrf_exempt
 @require_POST
@@ -26,3 +27,7 @@ def postreceive(request):
         os.system('bash ./deploy.sh')
         return HttpResponse('success')
     return HttpResponse(status=204)
+
+
+def handler404(request, exception):
+    return render(request, "page/404.html", status=404)
