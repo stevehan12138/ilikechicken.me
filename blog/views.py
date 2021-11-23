@@ -1,4 +1,5 @@
 from django.shortcuts import render, get_object_or_404
+from django.utils.html import strip_tags
 from .models import *
 
 # Create your views here.
@@ -8,6 +9,8 @@ def blog_post_list(request):
     search = request.GET.get('q')
     if search:
         blogs = blogs.filter(title__icontains=search)
+    for blog in blogs:
+        blog.body = strip_tags(blog.body)
     return render(request, 'blog/index.html', {'blogs': blogs})
 
 def blog_post_detail(request, pk):
