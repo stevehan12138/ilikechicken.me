@@ -3,16 +3,12 @@
   width: 75%;
   height: 100px;
   bottom: 0;
-  text-align: center;
   padding: 20px 0;
-  position: relative;
   margin: 0 auto;
 }
 
 .icon {
-  position: absolute;
-  left: 30px;
-  top: 12px;
+  margin-left: 10px;
 }
 
 .inline {
@@ -20,15 +16,19 @@
 }
 
 .menu {
-  position: absolute;
-  right: 40px;
-  top: 18px;
+  float: right;
+  padding-top: 14px;
+  margin-right: 10px;
 }
 
 .menulink {
   color: #D8D2E1;
   font-size: 18px;
-  padding-left: 26px;
+  margin-left: 26px;
+}
+
+.menulink:hover {
+  color: #466286;
 }
 
 .phone {

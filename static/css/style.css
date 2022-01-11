@@ -121,3 +121,23 @@ html, body {
 ::-webkit-scrollbar-thumb:hover {
     background: #466286;
 }
+
+@media (max-width: 760px){
+    .mobile-hide {
+        display: none !important;
+    }
+
+    .mobile-show {
+        display: block !important;
+    }
+}
+
+@media (max-width: 960px){
+    .navbar {
+        padding: 10px 0 0 0;
+    }
+}
+
+.mobile-show {
+    display: none !important;
+}
