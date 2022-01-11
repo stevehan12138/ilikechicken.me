@@ -46,11 +46,13 @@
     }
 }
 
-@media (max-width: 960px){
+@media (max-width: 991px){
     #pfp {
         height: 200px !important;
     }
+}
 
+@media (max-width: 960px){
     .skill .level {
         font-size: 12px;
     }
