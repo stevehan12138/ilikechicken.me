@@ -21,18 +21,16 @@
             </div>
         </div>
         <div class="col-lg-3 sidebar">
-            <div class="row">
-                <h3 class="col-12">Recent Posts</h3>
-                {% for recent in recents %}
-                <div class="card recent-post col-lg-12 col-4">
-                    <div class="card-body">
-                        <h5 class="card-title">{{ recent.title }}</h5>
-                        <div class="card-text">{{ recent.body|safe|slice:'50'}}</div>
-                        <a href="{{ blog.id }}" class="btn">Read</a>
-                    </div>
+            <h3 id="recent-title">Recent Posts</h3>
+            {% for recent in recents %}
+            <div class="card recent-post">
+                <div class="card-body">
+                    <h5 class="card-title">{{ recent.title }}</h5>
+                    <div class="card-text">{{ recent.body|safe|slice:'50'}}</div>
+                    <a href="{{ blog.id }}" class="btn">Read</a>
                 </div>
-                {% endfor %}
             </div>
+            {% endfor %}
         </div>
     </div>
 </div>

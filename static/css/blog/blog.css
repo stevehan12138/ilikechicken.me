@@ -16,6 +16,12 @@
     color: #D8D2E1;
 }
 
+@media screen and (max-width: 992px) {
+    .sidebar {
+        display: none;
+    }
+}
+
 .title {
     font-size: 40px;
     font-weight: bold;
@@ -37,4 +43,9 @@
 
 .blog-post {
     margin-bottom: 30px;
+}
+
+#recent-title {
+    font-weight: bold;
+    margin-left: 20px;
 }
