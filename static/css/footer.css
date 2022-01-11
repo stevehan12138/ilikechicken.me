@@ -1,12 +1,12 @@
 .footer {
-  width: 100%;
-  height: 60px;
-  background-color: #657183;
+  border-top: 1.5px solid #D8D2E1;
+  width: 75%;
+  height: 100px;
   bottom: 0;
   text-align: center;
   padding: 20px 0;
   position: relative;
-  color: #ffffff;
+  margin: 0 auto;
 }
 
 .icon {
@@ -26,14 +26,9 @@
 }
 
 .menulink {
-  color: #ffffff;
+  color: #D8D2E1;
   font-size: 18px;
   padding-left: 26px;
-}
-
-.menulink:hover .phone{
-  color: #000000e5;
-  visibility: visible;
 }
 
 .phone {

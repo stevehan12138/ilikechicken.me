@@ -1,8 +1,9 @@
 html, body {
     margin: 0;
     height: 100%;
-    background-color: #f5f5f5;
+    background-color: #2E4057;
     font-family: 'Sora', sans-serif;
+    color: #D8D2E1;
 }
 
 .main-content{
@@ -12,56 +13,45 @@ html, body {
 }
 
 .navbar {
-    background-color: #7C90A0;
+    background-color: inherit;
+    padding: 40px 10px;
+}
+
+.navbar-brand img{
+    height: 60px;
+}
+
+.navbar-brand::after {
+    content: 'Ilikechicken';
+    color: #D8D2E1;
 }
 
 .nav-link {
-    color: white !important;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    color: #D8D2E1 !important;
 }
 
 .nav-item {
+    padding: 0px 5px;
     margin: auto 5px;
 }
 
 .btn{
     border-radius: 7px;
-    border: .15rem solid white;
+    border: .15rem solid #D8D2E1;
+    color: #D8D2E1;
     margin: auto 5px;
     padding: .3rem .75em;
+    background-color: #3F5A78;
 }
 
-.btn.login{
-    background-color: #657183;
-    color: white;
-}
-
-.d-inline-block a{
-    color: #C4C4C4;
+.btn:hover {
+    background-color: #466286;
+    border-color: #2E4057;
 }
 
 .container.contacts{
     display: flex;
-}
-
-#banner {
-    background-color: #657183;
-    text-align: center;
-    padding: 29em 0 6em 0;
-    color: white;
-}
-
-#banner h2{
-    color: white;
-    font-size: 3.5em;
-    font-weight: 300;
-    margin-top: -5em;
-}
-
-#banner .bannerbtn{
-    margin: auto 30em;
-    align-items: center;
-    justify-content: center;
 }
 
 .btn-big{
@@ -69,17 +59,17 @@ html, body {
     border: .15rem solid white;
     padding: .5rem 1.5em;
     font-size: 24px;
-    color: white;
+    color: inherit;
 }
 
 .btn-big.learnmore{
-    background-color: #9FCDC8;
-    border: .15rem solid #9FCDC8;
+    background-color: #466286;
+    border: none;
 }
 
 .btn-big.signup{
-    background-color: #7C90A0;
-    border: .15rem solid white;
+    background-color: #466286;
+    border: none;
 }
 
 .placeholder {
@@ -96,8 +86,17 @@ html, body {
     padding: 20px 0;
 }
 
-.about-me {
-    width: 75%;
-    margin: 0 auto;
-    padding: 20px 0;
+.fill {
+    background-color: #3F5A78;
+    color: #D8D2E1;
+    border: none;
+}
+
+.fill::placeholder{
+    color: #D8D2E1;
+}
+
+.fill:focus{
+    background-color: #3F5A78;
+    color: #D8D2E1;
 }

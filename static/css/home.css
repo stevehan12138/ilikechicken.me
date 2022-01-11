@@ -1,0 +1,121 @@
+#banner {
+    text-align: center;
+    padding: 32em 0 16em 0;
+    color: inherit;
+}
+
+#banner h2{
+    color: inherit;
+    font-size: 3.5em;
+    font-weight: 300;
+    margin-top: -5em;
+}
+
+#banner .bannerbtn{
+    margin: auto 30em;
+    align-items: center;
+    justify-content: center;
+}
+
+.introduction {
+    width: 75%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+#about-me {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#about-me-p {
+    line-height: 30px;
+    word-spacing: 3px;
+}
+
+#pfp {
+    clip-path: circle();
+    float: left;
+    border: 5px solid #84B082;
+    border-radius: 50%;
+}
+
+@media (max-width: 1224px) {
+    #pfp {
+        height: 200px !important;
+    }
+}
+
+@media (max-width: 960px){
+    .skill .level {
+        font-size: 12px;
+    }
+    
+    .exp {
+        margin-bottom: 40px;
+    }
+}
+
+#experiences {
+    font-weight: bold;
+    margin-top: 140px;
+    margin-bottom: 60px;
+}
+
+#skills {
+    font-weight: bold;
+    margin-top: 140px;
+    margin-bottom: 40px;
+}
+
+.card {
+    background-color: #3F5A78;
+}
+
+.exp .card-body .card-title {
+    text-align: center;
+    font-weight: bold;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn.disabled {
+    background-color: #466286;
+    border-color: #2E4057;
+}
+
+.exp .card-body ul{
+    height: 300px;
+}
+
+.skill {
+    margin: 5px 0;
+    background-color: #3F5A78;
+    border-radius: 3px;
+    font-size: 18px;
+    padding: 16px;
+    overflow: visible;
+}
+
+.thing {
+    display: inline-block;
+}
+
+.level {
+    float: right;
+}
+
+#hobbies {
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 40px;
+}
+
+.hobbie {
+    border-left: #3F5A78 solid 4px;
+    padding: 10px 20px;
+}
