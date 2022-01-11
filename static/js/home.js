@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     $('#banner').on('inview', function(event, isInView) {
         if (isInView) {
+            $('#banner').removeClass( "hidden");
             anime({
                 targets: '#banner',
                 easing: 'easeOutSine',
@@ -14,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     $('.introduction').on('inview', function(event, isInView) {
         if (isInView) {
+            $('.introduction').removeClass( "hidden");
             anime({
                 targets: '.introduction',
                 easing: 'easeOutQuart',
@@ -25,21 +27,23 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     })
 
-    $('.experiences').on('inview', function(event, isInView) {
+    $('.exp').on('inview', function(event, isInView) {
         if (isInView) {
+            $('.exp').removeClass( "hidden");
             anime({
-                targets: '.experiences',
+                targets: '.exp',
                 easing: 'easeOutQuart',
                 translateX: [100, 0],
                 opacity: [0, 1],
                 duration: 1200,
             })
-            $('.experiences').off('inview');
+            $('.exp').off('inview');
         }
     })
 
     $('.skill').on('inview', function(event, isInView) {
         if (isInView) {
+            $('.skill').removeClass( "hidden");
             anime({
                 targets: '.skill',
                 easing: 'easeInExpo',
@@ -48,6 +52,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 duration: 600,
             })
             $('.skill').off('inview');
+        }
+    })
+
+    $('.hobbie').on('inview', function(event, isInView) {
+        if (isInView) {
+            $('.hobbie').removeClass( "hidden");
+            anime({
+                targets: '.hobbie',
+                easing: 'easeOutQuart',
+                translateX: [-100, 0],
+                opacity: [0, 1],
+                duration: 800,
+            })
+            $('.hobbie').off('inview');
         }
     })
 })

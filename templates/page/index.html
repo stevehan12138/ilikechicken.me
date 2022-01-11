@@ -17,7 +17,7 @@
 {% endblock title %}
 
 {% block content %}
-    <section id="banner">
+    <section id="banner" class="hidden">
         <h2>Steve Han</h2>
         <p>My personal site to put my thoughts</p>
         <div class="d-flex justify-content-center">
@@ -30,11 +30,11 @@
         </div>
     </section>
     <div class="container">
-        <div class="row introduction">
-            <div class="col-md-4">
+        <div class="row introduction hidden">
+            <div class="col-md-6">
                 <img id="pfp" src="{% static 'image/pfp.png' %}" alt="pfp" height="300">
             </div>
-            <div class="col-md-8">
+            <div class="col-md-6">
                 <h2 id="about-me">About me</h2>
                 <p id="about-me-p">I'm a high schooler living in Toronto who is highly interested in CS. I liked to tinker with computers when I was really young and kept the interest until now. I&#39;m looking for any CS-related volunteer or intern opportunities, as well as learning more about the field and the future of technology. If you have any questions or want to get in touch, please feel free to contact me.</p>
             </div>
@@ -42,9 +42,9 @@
     
 
         <h2 id="experiences">Experiences</h2>
-        <div class="row experiences">
+        <div class="row">
             <div class="col-lg-4">
-                <div class="card exp">
+                <div class="card exp hidden">
                     <div class="card-body">
                         <h5 class="card-title">Ilikechicken Blog Website</h5>
                         <ul>
@@ -57,7 +57,7 @@
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="card exp">
+                <div class="card exp hidden">
                     <div class="card-body">
                         <h5 class="card-title">UConnect</h5>
                         <ul>
@@ -69,7 +69,7 @@
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="card exp">
+                <div class="card exp hidden">
                     <div class="card-body">
                         <h5 class="card-title">IMHP - Sickkids Hospital</h5>
                         <ul>
@@ -86,51 +86,51 @@
 
         <h2 id="skills">Skills</h2>
         <div class="skills">
-            <div class="skill">
+            <div class="skill hidden">
                 <div class="thing">Django</div>
                 <div class="level">Intermediate</div>
             </div>
-            <div class="skill">
+            <div class="skill hidden">
                 <div class="thing">Python</div>
                 <div class="level">Late Intermediate - Experienced</div>
             </div>
-            <div class="skill">
+            <div class="skill hidden">
                 <div class="thing">Javascript/Typescript</div>
                 <div class="level">Intermediate - Experienced</div>
             </div>
-            <div class="skill">
+            <div class="skill hidden">
                 <div class="thing">React</div>
                 <div class="level">Intermediate - Experienced</div>
             </div>
-            <div class="skill">
+            <div class="skill hidden">
                 <div class="thing">Bootstrap/Material-UI</div>
                 <div class="level">Late Intermediate - Experienced</div>
             </div>
-            <div class="skill">
+            <div class="skill hidden">
                 <div class="thing">GraphQL</div>
                 <div class="level">Intermediate</div>
             </div>
-            <div class="skill">
+            <div class="skill hidden">
                 <div class="thing">Java</div>
                 <div class="level">Intermediate</div>
             </div>
-            <div class="skill">
+            <div class="skill hidden">
                 <div class="thing">Wordpress</div>
                 <div class="level">Intermediate</div>
             </div>
-            <div class="skill">
+            <div class="skill hidden">
                 <div class="thing">Linux</div>
                 <div class="level">Intermediate</div>
             </div>
-            <div class="skill">
+            <div class="skill hidden">
                 <div class="thing">Data Structure and Computer Algorithm</div>
                 <div class="level">Beginner - Intermediate</div>
             </div>
-            <div class="skill">
+            <div class="skill hidden">
                 <div class="thing">Computer Contests</div>
                 <div class="level">Beginner - Intermediate</div>
             </div>
-            <div class="skill">
+            <div class="skill hidden">
                 <div class="thing">C/C++</div>
                 <div class="level">Beginner</div>
             </div>
@@ -138,10 +138,10 @@
 
         <h2 id="hobbies">My Hobbies</h2>
         <div class="row">
-            <div class="col-lg-3 hobbie">Piano at advanced level</div>
-            <div class="col-lg-3 hobbie">Intermediate level of badminton</div>
-            <div class="col-lg-3 hobbie">Guitar</div>
-            <div class="col-lg-3 hobbie">Video games</div>
+            <div class="col-lg-3 hobbie hidden">Piano at advanced level</div>
+            <div class="col-lg-3 hobbie hidden">Intermediate level of badminton</div>
+            <div class="col-lg-3 hobbie hidden">Guitar</div>
+            <div class="col-lg-3 hobbie hidden">Video games</div>
         </div>
         <br />
     </div>

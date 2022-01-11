@@ -40,13 +40,17 @@
     border-radius: 50%;
 }
 
-@media (max-width: 1224px) {
+@media (max-width: 768px){
     #pfp {
-        height: 200px !important;
+        visibility: collapse;
     }
 }
 
 @media (max-width: 960px){
+    #pfp {
+        height: 200px !important;
+    }
+
     .skill .level {
         font-size: 12px;
     }
@@ -118,4 +122,8 @@
 .hobbie {
     border-left: #3F5A78 solid 4px;
     padding: 10px 20px;
+}
+
+.hidden {
+    visibility: hidden;
 }
