@@ -1,0 +1,17 @@
+.sidebar {
+    width: 280px;
+    border-top: 1px solid #D8D2E1;
+    border-bottom: 1px solid #D8D2E1;  
+}
+
+.nav-link:hover {
+    color: #466286 !important;
+}
+
+.nav-current {
+    background-color: #466286 !important;
+}
+
+.disable{
+	pointer-events:none;
+}

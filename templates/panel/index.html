@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block js %}
+<script src="{% static 'js/lib/jquery-3.6.0.min.js' %}"></script>
+<script src="{% static 'js/utils.js' %}"></script>
+{% endblock js %}
+
+{% block title %}
+    Panel - ilikchicken.me
+{% endblock title %}
+
+{% block content %}
+<div class="card login-card">
+    <div class="card-body">
+        <h4 class="card-title">Login</h4>
+        <br />
+        <form action="login/" method="POST">
+            {% csrf_token %}
+            <input type="text" class="form-control mb-4 dark fill" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" name="username">
+            <div class="form-group">
+                <div class="input-group outline" id="show_hide_password">
+                    <input class="form-control dark fill" type="password" placeholder="Password" name="password">
+                    <span class="input-group-text border-0 input-group-addon" id="search-addon">
+                        <a href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+                    </span>
+                </div>
+            </div>
+            <br />
+            <div class="mt-2">
+                <button type="submit" class="btn" style="float: right";>Login</button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock content %}

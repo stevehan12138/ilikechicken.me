@@ -1,0 +1,51 @@
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/panel/sidebar.css' %}">
+{% endblock css %}
+
+<div class="d-flex flex-column flex-shrink-0 p-3 sidebar">
+    <ul class="nav nav-pills flex-column mb-auto">
+      <li>
+        <a href="/panel/dashboard/" class="nav-link 
+          {% if request.path == '/panel/dashboard/' %} 
+            nav-current 
+            disable
+          {% endif %}">
+          Dashboard
+        </a>
+      </li>
+      <li>
+        <a href="/panel/blogs/" class="nav-link
+        {% if request.path == '/panel/blogs/' %} 
+          nav-current 
+          disable
+        {% endif %}">
+          Blogs
+        </a>
+      </li>
+      <li>
+        <a href="/panel/comments/" class="nav-link 
+        {% if request.path == '/panel/comments/' %} 
+          nav-current 
+          disable
+        {% endif %}">
+          Comments
+        </a>
+      </li>
+      <li>
+        <a href="/panel/users/" class="nav-link
+        {% if request.path == '/panel/users/' %} 
+          nav-current 
+          disable
+        {% endif %}">
+          Users
+        </a>
+      </li>
+      <li>
+        <a href="/panel/logout/" class="nav-link">
+          Log Out
+        </a>
+      </li>
+    </ul>
+</div>

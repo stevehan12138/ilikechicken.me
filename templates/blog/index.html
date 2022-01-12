@@ -18,7 +18,7 @@
         <div class="card-body">
             <h5 class="card-title">{{ blog.title }}</h5>
             <p><small>Last Updated: {{ blog.last_edited }}</small></p>
-            <p class="card-text">{{ blog.body|safe|slice:'100' }}...</p>
+            <p class="card-text">{{ blog.body|safe|truncatewords:20 }}...</p>
             <a href="{{ blog.id }}" class="btn">Read</a>
         </div>
     </div>

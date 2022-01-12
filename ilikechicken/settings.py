@@ -31,6 +31,7 @@ ALLOWED_HOSTS = constants.ALLOWED_HOSTS
 INSTALLED_APPS = [
     'blog',
     'ckeditor',
+    'panel',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

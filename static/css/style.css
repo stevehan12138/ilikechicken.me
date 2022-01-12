@@ -84,6 +84,21 @@ html, body {
     padding: 20px 0;
 }
 
+.address {
+    margin:100px 0;
+}
+
+.address p{
+    text-align: center;
+    overflow-wrap: break-word;
+}
+
+.address img{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
 .fill {
     background-color: #3F5A78;
     color: #D8D2E1;
@@ -99,7 +114,14 @@ html, body {
     color: #D8D2E1;
 }
 
+.fill.dark {
+    background-color: #2E4057;
+    color: #D8D2E1;
+}
+
 .card {
+    background-color: #3F5A78;
+    border-radius: 4px;
     box-shadow: 5px 5px 10px -3px rgba(0,0,0,0.1);
 }
 
@@ -138,4 +160,26 @@ html, body {
 
 .mobile-show {
     display: none !important;
+}
+
+.login-card {
+    width: 450px;
+    margin: 10% auto 15% auto;
+}
+
+#search-addon {
+    background-color: #3F5A78;
+}
+
+.outline {
+    border: solid .15rem #D8D2E1;
+    border-radius: 5px;
+}
+
+.input-group-addon a{
+    color: #D8D2E1;
+}
+
+.input-group-addon a:hover{
+    color: #AEB4A9;
 }

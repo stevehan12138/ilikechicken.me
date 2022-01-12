@@ -24,8 +24,9 @@ urlpatterns = [
     path('', TemplateView.as_view(template_name='page/index.html'), name='home'),
     path('privacy/', TemplateView.as_view(template_name='page/privacy.html'), name='privacy'),
     path('contact/', TemplateView.as_view(template_name='page/contact.html'), name='contact'),
-    path('about/', TemplateView.as_view(template_name='page/about.html'), name='about'),
+    path('donate/', TemplateView.as_view(template_name='page/donate.html'), name='donate'),
     path('blog/', include('blog.urls'), name='blog'),
+    path('panel/', include('panel.urls'), name='panel'),
     path('postreceive/', views.postreceive, name='postreceive'),
 ]
 

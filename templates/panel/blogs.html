@@ -1,0 +1,21 @@
+{% extends "base.html" %} 
+{% load static %} 
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/panel/dashboard.css' %}">
+{% endblock css %}
+
+{% block title %} Dashboard - ilikchicken.me {% endblock title %} 
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3">
+            {% include 'panel/sidebar.html' %}
+        </div>
+        <div class="col-lg-8 content">
+            under development
+        </div>
+    </div>
+</div>
+{% endblock content %}

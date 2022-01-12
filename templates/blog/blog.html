@@ -12,7 +12,7 @@
 {% block content %}
 <div class="container-fluid" style="height:100%">
     <div class="row">
-        <div class="col-lg-9 blog-body">
+        <div class="col-lg-10 blog-body">
             <h2 class="title">{{ blog.title }}</h2>
             <p>Last updated: {{ blog.last_edited }}</p>
             <hr />
@@ -20,13 +20,13 @@
             <p>{{ blog.body|safe }}</p>
             </div>
         </div>
-        <div class="col-lg-3 sidebar">
+        <div class="col-lg-2 sidebar">
             <h3 id="recent-title">Recent Posts</h3>
             {% for recent in recents %}
             <div class="card recent-post">
                 <div class="card-body">
                     <h5 class="card-title">{{ recent.title }}</h5>
-                    <div class="card-text">{{ recent.body|safe|slice:'50'}}</div>
+                    <div class="card-text">{{ recent.body|safe|truncatewords:20}}</div>
                     <a href="{{ blog.id }}" class="btn">Read</a>
                 </div>
             </div>

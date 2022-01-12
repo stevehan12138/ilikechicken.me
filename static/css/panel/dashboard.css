@@ -1,0 +1,11 @@
+.content {
+    background-color: #A7CCED;
+    border-radius: 5px;
+    min-height: 500px;
+    margin-bottom: 50px;
+    color: #2E4057;
+}
+
+.stats {
+    padding: 10px 30px;
+}
