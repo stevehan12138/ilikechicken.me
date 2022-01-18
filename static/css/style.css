@@ -54,7 +54,7 @@ html, body {
 
 .btn-big{
     border-radius: 7px;
-    border: .15rem solid white;
+    border: .15rem solid #D8D2E1;
     padding: .5rem 1.5em;
     font-size: 24px;
     color: inherit;

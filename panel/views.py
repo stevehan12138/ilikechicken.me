@@ -3,8 +3,6 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import redirect
 from blog.models import BlogPost
-import requests
-from ilikechicken import constants
 
 # Create your views here.
 

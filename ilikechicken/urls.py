@@ -21,7 +21,7 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', TemplateView.as_view(template_name='page/index.html'), name='home'),
+    path('', views.home_page, name='home'),
     path('privacy/', TemplateView.as_view(template_name='page/privacy.html'), name='privacy'),
     path('contact/', TemplateView.as_view(template_name='page/contact.html'), name='contact'),
     path('donate/', TemplateView.as_view(template_name='page/donate.html'), name='donate'),

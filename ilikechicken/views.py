@@ -7,7 +7,8 @@ from django.http import HttpResponse
 from ilikechicken import constants
 from django.views.decorators.csrf import csrf_exempt
 from django.utils.encoding import force_bytes
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render
+from blog.models import BlogPost
 
 @csrf_exempt
 @require_POST
@@ -31,3 +32,8 @@ def postreceive(request):
 
 def handler404(request, exception):
     return render(request, "page/404.html", status=404)
+
+def home_page(request):
+    blogs = BlogPost.objects.all()
+    blog_count = len(blogs)
+    return render(request, "page/index.html", {'blogs': blogs, 'blog_count': blog_count})

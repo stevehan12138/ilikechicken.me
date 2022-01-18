@@ -1,4 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const startedDate = new Date(2021, 3, 10);
+    const now = new Date();
+    const diff = now.getTime() - startedDate.getTime()
+
+    let timeE = document.getElementById('time');
+    timeE.innerHTML = "Months website is up: " + Math.floor(diff / (1000*60*60*24)) + " days since 2021/3/10";
+
     $('#banner').on('inview', function(event, isInView) {
         if (isInView) {
             $('#banner').removeClass( "hidden");
