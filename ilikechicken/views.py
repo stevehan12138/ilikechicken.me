@@ -25,7 +25,7 @@ def postreceive(request):
             expected = request.headers['X_Hub_Signature_256'].split('=')[1]
             if not hmac.compare_digest(force_bytes(signature.hexdigest()), force_bytes(expected)):
                 return HttpResponse(status=403)
-        os.system('bash ./deploy.sh')
+        os.system('bash ~/apps/website/ilikechicken.me/ilikechicken/deploy.sh')
         return HttpResponse('success')
     return HttpResponse(status=204)
 
