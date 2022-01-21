@@ -120,7 +120,7 @@ STATICFILES_DIRS = [
 
 STATIC_URL = "/static/"
 
-STATIC_ROOT = BASE_DIR / "staticroot"
+STATIC_ROOT = constants.STATIC_ROOT
 
 CKEDITOR_CONFIGS = {
     'default': {
