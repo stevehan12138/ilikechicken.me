@@ -27,7 +27,6 @@ urlpatterns = [
     path('donate/', TemplateView.as_view(template_name='page/donate.html'), name='donate'),
     path('blog/', include('blog.urls'), name='blog'),
     path('panel/', include('panel.urls'), name='panel'),
-    path('postreceive/', views.postreceive, name='postreceive'),
 ]
 
 handler404 = 'ilikechicken.views.handler404'
