@@ -33,6 +33,11 @@
     word-spacing: 3px;
 }
 
+#vision {
+    line-height: 30px;
+    word-spacing: 3px;
+}
+
 #pfp {
     clip-path: circle();
     float: left;
@@ -64,7 +69,7 @@
 
 @media (max-width: 1200px){
     .line {
-        visibility: collapse;
+        display: none
     }
 }
 
